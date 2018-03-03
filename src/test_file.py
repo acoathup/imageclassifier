@@ -1,10 +1,21 @@
+import numpy as np
+import scipy
+from matplotlib import pyplot as plt
 
 
 def main():
-    f()
-    nolan_esplen = Nolan('esplen')
-    nolan_esplen.last_name
-    pass
+
+    a = np.load('/home/acoathup/train_data2.npz')
+
+    for i in a['with_seed'][0:10]:
+
+        fig, ax = plt.subplots()
+
+        ax.imshow(i, origin='lower', cmap='Greys_r')
+        plt.show()
+
+
+
 
 
 def f():
